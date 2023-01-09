@@ -19,7 +19,7 @@ const Sidebar = () => {
                 </div>
                 
             </nav>
-            <div class="logo"><b>B<span>ie</span>nv<span>eni</span>dos</b></div>
+            
 
         </>
     )

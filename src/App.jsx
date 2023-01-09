@@ -8,22 +8,24 @@ import Educacion from './components/Educacion'
 import Contacto from './components/Contacto'
 import Dashboard from './components/Dashboard'
 import Sidebar from './components/Sidebar'
+import CardFlip from './components/CardFlip'
 
 function App() {
 
   return (
-    <><Sidebar>
+    <>
+      <Dashboard>
         <Routes>
-          <Route path='/' element={<Dashboard/>} />
-          <Route path='/inicio' element={<Inicio/>} />
-          <Route path='/sobremi' element={<SobreMi/>} />
-          <Route path='/portfolio' element={<Portfolio/>} />
-          <Route path='/skills' element={<Skills/>} />
-          <Route path='/educacion' element={<Educacion/>} />
-          <Route path='/contacto' element={<Contacto/>} />
+          <Route path='/' element={<Dashboard />} />
+          <Route path='/inicio' element={<Inicio />} />
+          <Route path='/sobremi' element={<SobreMi />} />
+          <Route path='/portfolio' element={<Portfolio />} />
+          <Route path='/cardflip' element={<CardFlip />} />
+          <Route path='/skills' element={<Skills />} />
+          <Route path='/educacion' element={<Educacion />} />
+          <Route path='/contacto' element={<Contacto />} />
         </Routes>
-      </Sidebar>
-
+      </Dashboard>
     </>
   )
 }

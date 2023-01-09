@@ -14,18 +14,18 @@ function App() {
 
   return (
     <>
-      <Dashboard>
-        <Routes>
-          <Route path='/' element={<Dashboard />} />
-          <Route path='/inicio' element={<Inicio />} />
-          <Route path='/sobremi' element={<SobreMi />} />
-          <Route path='/portfolio' element={<Portfolio />} />
-          <Route path='/cardflip' element={<CardFlip />} />
-          <Route path='/skills' element={<Skills />} />
-          <Route path='/educacion' element={<Educacion />} />
-          <Route path='/contacto' element={<Contacto />} />
-        </Routes>
-      </Dashboard>
+      <Sidebar />
+      <Routes>
+        <Route path='/' element={<Dashboard />} />
+        <Route path='/inicio' element={<Inicio />} />
+        <Route path='/sobremi' element={<SobreMi />} />
+        <Route path='/portfolio' element={<Portfolio />} />
+        <Route path='/cardflip' element={<CardFlip />} />
+        <Route path='/skills' element={<Skills />} />
+        <Route path='/educacion' element={<Educacion />} />
+        <Route path='/contacto' element={<Contacto />} />
+      </Routes>
+
     </>
   )
 }

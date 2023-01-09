@@ -7,6 +7,7 @@ const Sidebar = () => {
 
     return (
         <>
+        
             <nav className='sidebar'>
                 <img className='logoSidebar' src='/images/logoportfolio.png'/>
                 <div className="linkContainer">

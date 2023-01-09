@@ -9,13 +9,10 @@ const Dashboard = () => {
     return (
         <>
         <div className="containerPadre">
-            <Sidebar/>
             <main className='dashboardMain'>
                 <section>
-                <div class="logo"><b>B<span>ie</span>nv<span>eni</span>dos</b></div>
+                <div className="logo"><b>B<span>ie</span>nv<span>eni</span>dos</b></div>
                 </section>
-
-                
             </main>
         </div>
         </>

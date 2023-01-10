@@ -1,9 +1,6 @@
 import React from 'react'
-import Sidebar from './Sidebar'
 import 'animate.css';
-import Portfolio from './Portfolio';
-import CardFlip from './CardFlip';
-import Skills from './Skills';
+
 
 const Dashboard = () => {
     return (

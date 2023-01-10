@@ -1,21 +1,36 @@
-import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import Inicio from './components/Inicio'
-import SobreMi from './components/SobreMi'
-import Portfolio from './components/Portfolio'
-import Skills from './components/Skills'
-import Educacion from './components/Educacion'
-import Contacto from './components/Contacto'
-import Dashboard from './components/Dashboard'
 import Sidebar from './components/Sidebar'
-import CardFlip from './components/CardFlip'
+import Dashboard from './components/Pages/Dashboard'
+import Inicio from './components/Pages/Inicio'
+import SobreMi from './components/Pages/SobreMi'
+import Portfolio from './components/Pages/Portfolio'
+import Skills from './components/Pages/Skills'
+import Educacion from './components/Pages/Educacion'
+import Contacto from './components/Pages/Contacto'
+import { Route, Routes } from 'react-router'
+
 
 function App() {
-
   return (
     <>
-      <Sidebar />
+    <Sidebar />
       <Routes>
+        <Route path='/' element={<Dashboard />} />
+        <Route path='/inicio' element={<Inicio />} />
+        <Route path='/sobremi' element={<SobreMi />} />
+        <Route path='/portfolio' element={<Portfolio />} />
+        <Route path='/skills' element={<Skills />} />
+        <Route path='/educacion' element={<Educacion />} />
+        <Route path='/contacto' element={<Contacto />} />
+    </Routes>
+    </>
+  )
+}
+
+export default App
+/* 
+<Routes>
+        
         <Route path='/' element={<Dashboard />} />
         <Route path='/inicio' element={<Inicio />} />
         <Route path='/sobremi' element={<SobreMi />} />
@@ -24,10 +39,5 @@ function App() {
         <Route path='/skills' element={<Skills />} />
         <Route path='/educacion' element={<Educacion />} />
         <Route path='/contacto' element={<Contacto />} />
-      </Routes>
-
-    </>
-  )
-}
-
-export default App
+    </Routes>
+*/

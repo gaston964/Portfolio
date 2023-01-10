@@ -1,5 +1,5 @@
 import React from 'react'
-import CardFlip from './CardFlip'
+import CardFlip from '../CardFlip'
 /* import { IoLogoJavascript, IoLogoHtml5, IoLogoCss3 } from "react-icons/io";
 import { BsBootstrapFill } from "react-icons/bs";
 import { FaReact } from "react-icons/fa"; */
@@ -36,15 +36,11 @@ const Portfolio = () => {
   ]
   return (
     <>
-      <div className="portfolio">
         <h1>Portfolio</h1>
-        <div>
-        {proyectos.map((items, index) => {
-          <div key={index}>
-              {<CardFlip {...items} />}
-          </div>
-        })}
-        </div>
+      <div className="portfolio">
+        {proyectos.map((items, index) =>
+            <CardFlip key={index} {...items} />
+        )}
       </div>
     </>
   )

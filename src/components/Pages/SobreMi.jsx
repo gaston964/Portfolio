@@ -3,7 +3,7 @@ import React from 'react'
 const SobreMi = () => {
   return (
     <>
-    <div>
+    <div className='sobremiInfo'>
       <h3>Siempre fui un aficionado en la computacion y las paginas, si bien mi profesion era la de tecnico en 
         quirofano, con la pandemia y como se puso el ambiente decidi cambiar de carrea, ahi me aventure al mundo
         de la programacion

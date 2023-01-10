@@ -1,15 +1,17 @@
 import React from 'react'
 
-const CardFlip = ({ name, link, icons }) => {
+const CardFlip = ({ name, link, icons, img }) => {
     return (
         <>
             <div className="card">
                 <div className="content">
                     <div className="front">
-                        Front
+                    <img src={img} alt="" />
+                        {name}
                     </div>
                     <div className="back">
-                        Back!
+                        {icons}
+                        {link}
                     </div>
                 </div>
             </div>

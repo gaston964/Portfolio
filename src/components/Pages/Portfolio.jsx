@@ -1,14 +1,12 @@
 import React from 'react'
 import CardFlip from '../CardFlip'
-/* import { IoLogoJavascript, IoLogoHtml5, IoLogoCss3 } from "react-icons/io";
-import { BsBootstrapFill } from "react-icons/bs";
-import { FaReact } from "react-icons/fa"; */
 
 const Portfolio = () => {
   const proyectos = [
     {
       name: "AllBlack Tabaqueria",
-      link: ('https://gaston964.github.io/AllBlack-Tabaqueria/'),
+      link: <a href='https://gaston964.github.io/AllBlack-Tabaqueria/' target="_blank" rel="noopener noreferrer" >AllBlack Tabaqueria</a>,
+      img: './images/alblackportfolio.png',
       icons: <><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40" />
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" />
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40" />
@@ -17,7 +15,9 @@ const Portfolio = () => {
     },
     {
       name: "BelWines",
-      link: ('https://bel-wines-react.vercel.app/'),
+      link: <a href='https://bel-wines-react.vercel.app/' target="_blank" rel="noopener noreferrer" >BelWines</a>
+      ,
+      img: './images/belwinesportfolio.png',
       icons: <><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40" />
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" />
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" />
@@ -26,7 +26,8 @@ const Portfolio = () => {
     },
     {
       name: "GlassShop",
-      link: ('https://glass-shop.vercel.app/'),
+      link: <a href='https://glass-shop.vercel.app/' target="_blank" rel="noopener noreferrer" >GlassShop</a>,
+      img: './images/glassshopportfolio.png',
       icons: <><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40" />
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" />
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" />

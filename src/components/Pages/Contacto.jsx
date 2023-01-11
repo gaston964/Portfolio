@@ -5,8 +5,14 @@ const Contacto = () => {
     return (
         <>
             <div className='contactoPadre'>
+                <div>
+                    <div class="container">
+                        <div class="neon">Don't Forget </div>
+                        <div class="flux">To Call </div>
+                    </div>
+                </div>
                 <div className='containerRedes'>
-                    <h1>Aquí puedes contactarme a través de:</h1>
+                    <h1>Aquí puedes contactarme </h1>
                     <div className='contactoRedes'>
                         <ul className='wrapperContacto'>
                             <li className='icon whatsapp'><a href="https://web.whatsapp.com/send?phone=+542617234395" target="_blank" rel="noopener noreferrer"><AiOutlineWhatsApp /></a><span className='tooltip'>Whatsapp</span></li>
@@ -15,13 +21,6 @@ const Contacto = () => {
                         </ul>
                     </div>
                 </div>
-                <div>
-                    <div class="container">
-                        <div class="neon">Don't Forget </div>
-                        <div class="flux">To Call </div>
-                    </div>
-                </div>
-
             </div>
         </>
     )

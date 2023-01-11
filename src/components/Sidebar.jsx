@@ -9,9 +9,11 @@ const Sidebar = () => {
         <>
         
             <nav className='sidebar'>
+                <Link to={'/'}>
                 <img className='logoSidebar' src='/images/logoportfolio.png'/>
+                </Link>
                 <div className="linkContainer">
-                <Link to={'/'}>Inicio</Link>
+                <Link to={'/inicio'}>Inicio</Link>
                 <Link to={'/sobremi'}>Sobre Mi</Link>
                 <Link to={'/portfolio'} >Portfolio</Link>
                 <Link to={'/skills'}>Skilss</Link>

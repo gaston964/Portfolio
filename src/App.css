@@ -199,6 +199,23 @@ h3 {
     
 }
 
+.inicio a{
+
+    color: #FB4264;
+    font-weight: bold;
+    margin-left: 25px;
+    width: 95px;
+    height: 25px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+.inicio a:hover{
+    color: white;
+    background-color: #232848;
+
+}
+
 .inicioRedes {
     display: flex;
     margin-left: 25px;

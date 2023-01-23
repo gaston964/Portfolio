@@ -15,8 +15,7 @@ const Portfolio = () => {
     },
     {
       name: "BelWines",
-      link: <a href='https://bel-wines-react.vercel.app/' target="_blank" rel="noopener noreferrer" >BelWines</a>
-      ,
+      link: <a href='https://bel-wines.com/' target="_blank" rel="noopener noreferrer" >BelWines</a>,
       img: './images/belwinesportfolio.png',
       icons: <><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40" />
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" />

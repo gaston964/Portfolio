@@ -14,6 +14,7 @@ const Dashboard = () => {
                         <div className="text">
                             <h1 className="glow">Bienvenidos a mi Portfolio! </h1>
                         </div>
+                            <img src="/images/LogoGaston.png" alt="" />
                     </section>
                 </main>
             </div>

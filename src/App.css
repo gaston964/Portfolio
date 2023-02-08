@@ -15,7 +15,6 @@
     flex-direction: column;
     align-items: center;
     float: left;
-    
 }
 
 .linkContainer {
@@ -49,18 +48,22 @@
     height: 150px;
     border-radius: 1.5em/6em;
 }
+
 /* ------dashboard------- */
 .containerPadre {
     display: flex;
     margin: 0
 }
+
 .dashboardMain {
     display: flex;
     flex-direction: column;
 }
-.hidemax{
+
+.hidemax {
     display: none;
 }
+
 html,
 body {
     background: rgba(17, 17, 34, 0.808) url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg) center no-repeat;
@@ -136,8 +139,9 @@ body {
         text-shadow: inherit;
     }
 }
+
 :root {
-    --animation-time: 2s;	
+    --animation-time: 2s;
 }
 
 .text {
@@ -174,8 +178,9 @@ h1 {
         text-shadow: 0 0 30px #FF00DE, 0 0 40px #FF00DE, 0 0 60px #FF00DE;
     }
 }
+
 /* -------Inicio-------- */
-.containerInicio{
+.containerInicio {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -184,6 +189,7 @@ h1 {
 
 
 }
+
 .inicio {
     display: flex;
     flex-direction: column;
@@ -196,10 +202,10 @@ h3 {
     font-family: 'Sofia Sans Semi Condensed', sans-serif;
     margin-left: 25px;
     margin-bottom: 25px;
-    
+
 }
 
-.inicio a{
+.inicio a {
 
     color: #FB4264;
     font-weight: bold;
@@ -210,7 +216,8 @@ h3 {
     text-align: center;
     cursor: pointer;
 }
-.inicio a:hover{
+
+.inicio a:hover {
     color: white;
     background-color: #232848;
 
@@ -315,10 +322,11 @@ h3 {
     background: #E4405F;
     color: #ffffff;
 }
+
 .containerNeonInicio {
     display: flex;
     flex-direction: column;
-    
+
     text-align: center;
     vertical-align: middle;
 }
@@ -399,6 +407,7 @@ h3 {
     align-items: center;
 
 }
+
 /* ------CardFlip------- */
 
 .card {
@@ -427,20 +436,22 @@ h3 {
     box-sizing: border-box;
 }
 
-.card .front img{
+.card .front img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.card .back a{
-    color:white;
+
+.card .back a {
+    color: white;
 }
+
 .card .back {
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
     justify-content: space-around;
-text-align: center;
+    text-align: center;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -588,11 +599,12 @@ text-align: center;
 /* ------Contacto------- */
 .contactoPadre {
     height: 100vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
+
 .containerRedes {
     display: flex;
     flex-direction: column;
@@ -764,26 +776,90 @@ justify-content: space-around;
 }
 
 
-@media (max-width: 768px){
-    .hide{
+@media (max-width: 768px) {
+    .sidebar {
+        height: 70px;
+        width: 100vw;
+        flex-direction: row;
+        float: none;
+    }
+
+    .sidebar img {
         display: none;
     }
-    .hidemax{
+
+    .linkContainer {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .linkContainer a{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .text{
-        margin-top: 300px;
+    .hide {
+        display: none;
     }
-    .containerInicio{
-    margin: 0px;
+
+    .containerPadre {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
     }
-    .containerInicio h1, h2,h3{
+
+    .hidemax {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hidemax img {
+        width: 90%;
+        height: 400px;
+        margin-top: 25px;
+        border-radius: 85px;
+    }
+
+    .text {
+        margin-top: 150px;
+    }
+
+    .containerInicio {
+        margin: 0px;
+    }
+
+    .containerInicio h1,
+    h2,
+    h3 {
         margin: 0px;
         margin-top: 25px;
     }
 }
 
-
-
+@media (max-width: 576px) {
+    .sidebar {
+        height: 300px;
+        width: 100vw;
+    }
+    .linkContainer{
+    flex-direction: column;
+    justify-content: space-around;
+    }
+    .hidemax img {
+        width: 350px;
+        height: 300px;
+        border-radius: 65px;
+    }
+    .logoSkill{
+        display: none;
+    }
+    .contactoPadre{
+        height: 100%;
+        margin-top: 35px;
+    }
+}
